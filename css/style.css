@@ -294,6 +294,7 @@ img {
   border: none;
   border-radius: 4px;
   
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
@@ -317,9 +318,17 @@ img {
   margin: 0 auto;
   min-width: 200px;
   border-radius: 4px;
-  
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
 }
+
+.button.pre-hero:hover,
+.button.pre-hero:focus{
+  color: var(--accent-color);
+  background-color: var(--primary-white-color);
+}
+
 
 /* Особливості */
 
@@ -535,6 +544,7 @@ margin-bottom: 30px;
   margin-right: 10px;
 }
 
+/* Компанії */
 
 .box-company{
   display: flex;
@@ -555,12 +565,13 @@ margin-bottom: 30px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   box-sizing: border-box;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
 .box-link:hover{
   border: 1px solid var(--accent-color);
-    border-radius: 4px;
+  border-radius: 4px;
 }
 .box-link:focus {
   border: 1px solid var(--accent-color);
@@ -697,14 +708,11 @@ margin-bottom: 30px;
   margin-right: 8px;
 }
 
-.button.button-filtr:hover,
+/* .button.button-filtr:hover,
 .button.button-filtr:focus{
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* .wrap-filtr:hover{
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } */
+
 
 
 .wrap-filtr:not(last-child){
